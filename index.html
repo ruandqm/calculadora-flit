@@ -5,11 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Calculadora</title>
 </head>
 
 <body>
+    <header>
+        <img src="./assets/img/logoClean.png" alt="logo flit" width="90">
+    </header>
+    <main>
+        <section class="calculator">
 
+            <div class="resultDisplay">
+                <h2 id="result"></h2>
+            </div>
+            <div class="buttons">
+                <button class="inputNum" value="7" onclick="number()">7</button>
+                <button class="inputNum" value="8" onclick="number()">8</button>
+                <button class="inputNum" value="9" onclick="number()">9</button>
+                <button class="inputNum" value="/" onclick="operator()">/</button>
+                <button class="inputNum" value="4" onclick="number()">4</button>
+                <button class="inputNum" value="5" onclick="number()">5</button>
+                <button class="inputNum" value="6" onclick="number()">6</button>
+                <button class="inputNum" value="*" onclick="operator()">X</button>
+                <button class="inputNum" value="3" onclick="number()">3</button>
+                <button class="inputNum" value="2" onclick="number()">2</button>
+                <button class="inputNum" value="1" onclick="number()">1</button>
+                <button class="inputNum" value="-" onclick="operator()">-</button>
+                <button class="inputNum" value="0" onclick="number()">0</button>
+                <button class="inputNum" value="." onclick="number()">.</button>
+                <button class="inputNum" value="=" onclick="calculate()">=</button>
+                <button class="inputNum" value="+" onclick="operator()">+</button>
+            </div>
+        </section>
+        <section class="lastResult">
+            <h3>Último Resultado</h3>
+            <article>
+                <p>9999999</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
