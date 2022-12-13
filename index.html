@@ -17,31 +17,31 @@
         <section class="calculator">
 
             <div class="resultDisplay">
-                <h2 id="result"></h2>
+                <h1 id="result"></h1>
             </div>
             <div class="buttons">
-                <button class="inputNum" value="7" onclick="number()">7</button>
-                <button class="inputNum" value="8" onclick="number()">8</button>
-                <button class="inputNum" value="9" onclick="number()">9</button>
-                <button class="inputNum" value="/" onclick="operator()">/</button>
-                <button class="inputNum" value="4" onclick="number()">4</button>
-                <button class="inputNum" value="5" onclick="number()">5</button>
-                <button class="inputNum" value="6" onclick="number()">6</button>
-                <button class="inputNum" value="*" onclick="operator()">X</button>
-                <button class="inputNum" value="3" onclick="number()">3</button>
-                <button class="inputNum" value="2" onclick="number()">2</button>
-                <button class="inputNum" value="1" onclick="number()">1</button>
-                <button class="inputNum" value="-" onclick="operator()">-</button>
-                <button class="inputNum" value="0" onclick="number()">0</button>
-                <button class="inputNum" value="." onclick="number()">.</button>
-                <button class="inputNum" value="=" onclick="calculate()">=</button>
-                <button class="inputNum" value="+" onclick="operator()">+</button>
+                <button class="inputNum" value="7" onclick="number(this)">7</button>
+                <button class="inputNum" value="8" onclick="number(this)">8</button>
+                <button class="inputNum" value="9" onclick="number(this)">9</button>
+                <button class="inputNum" value="/" onclick="operation(this)">/</button>
+                <button class="inputNum" value="4" onclick="number(this)">4</button>
+                <button class="inputNum" value="5" onclick="number(this)">5</button>
+                <button class="inputNum" value="6" onclick="number(this)">6</button>
+                <button class="inputNum" value="*" onclick="operation(this)">X</button>
+                <button class="inputNum" value="3" onclick="number(this)">3</button>
+                <button class="inputNum" value="2" onclick="number(this)">2</button>
+                <button class="inputNum" value="1" onclick="number(this)">1</button>
+                <button class="inputNum" value="-" onclick="operation(this)">-</button>
+                <button class="inputNum" value="0" onclick="number(this)">0</button>
+                <button class="inputNum" value="." onclick="number(this)">.</button>
+                <button class="inputNum" value="=" onclick="calculate(this)">=</button>
+                <button class="inputNum" value="+" onclick="operation(this)">+</button>
             </div>
         </section>
         <section class="lastResult">
             <h3>Último Resultado</h3>
             <article>
-                <p>9999999</p>
+                <p id="last"></p>
             </article>
         </section>
     </main>

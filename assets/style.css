@@ -31,9 +31,15 @@ main {
 
 .resultDisplay {
     height: 5em;
+    padding: 1em;
     border-radius: 1em;
     background-color: #c1d798;
     margin-bottom: 1em;
+}
+
+.resultDisplay>h1 {
+    text-align: end;
+    font-size: 2.5em;
 }
 
 .buttons {
